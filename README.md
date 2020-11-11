@@ -18,7 +18,7 @@ supervised learning을 위해 라벨링 작업을 하거나 임의로 결함 데
 - 원본 NoDefect(정상), Defect(결함)이미지를 구분해서 각각 디렉토리에 저장한다.
 - getData.ipynb를 실행하면 train:val:test를 분리해서 각각 ./data/nocrop/의 train, val, val_for_training, test에 저장된다.
 - getPatchImages.ipynb를 실행하면 이미지당 패치 이미지들이 ./patch/의 train, test에 저장된다.
-
+```
 📦Fabric-Defect-Detector
  ┣ 📂data
  ┃ ┣ 📂NODefect
@@ -46,7 +46,7 @@ supervised learning을 위해 라벨링 작업을 하거나 임의로 결함 데
  ┣ 📜project poster.pdf
  ┣ 📜test.ipynb
  ┗ 📜validation.ipynb
-
+```
 ## 3. 모델 설명
 
 
