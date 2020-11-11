@@ -70,16 +70,29 @@ python getPatchImages.py
     - decoder: transpose하여 다시 64x64 패치로 복원
 
 - step4 
-![val](./img/val.png)
-<br>validation set으로 평가한 결과, model1가 가장 높은 f1 score를 얻었다. 
+<br>
+<p align="center">
+<img align="center" src="./img/val.png">
+</p>
+<br>
+validation set으로 평가한 결과, model1가 가장 높은 f1 score를 얻었다. 
 
-![model1-test](./img/model1.png)
-<br>그러나 model1이 재구성한 이미지를 시각화해본 결과, PCA와 비슷한 원리로 linear reduction을 통해, 섬유의 특징을 섬세하게 추출해내지 못했음을 확인할 수 있다.
+<table>
+  <tr>
+    <td align="center">Model1</td>
+    <td align="center">**Model4**</td>
+   </tr>
+  <tr>
+    <td><img src="./img/model1.png"></td>
+    <td><img src="./img/model4.png"></td>
+  </tr>
+</table>
 
-![model4-test](./img/model4.png)
-<br>따라서 validation에서 좋은 성능을 보였고, validate 데이터의 예측 및 재구성 결과도 좋은 model4를 최종 모델로 선정한다.
+<p>그러나 model1이 재구성한 이미지를 시각화해본 결과, PCA와 같은 원리로 linear reduction을 통해, 섬유의 특징을 섬세하게 추출해내지 못했음을 확인할 수 있다.
+따라서 validation에서 좋은 성능을 보였고, validate 데이터의 예측 및 재구성 결과도 좋은 **model4**를 최종 모델로 선정한다.
+</p>
 
-- step4 \
+- step4 
 <p>테스트 셋에 대한 f1-scroe = 81%. </p>
 53개의 결함 이미지 중에 49개를 결함으로 검출해내어 error rate를 낮춘다. 
 그러나 정상 이미지 28개 중 9개 만을 정상으로 판단하여, 정상에 대해서는 좋은 성능을 갖추지 못한다고 판단된다.
