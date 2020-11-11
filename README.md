@@ -65,18 +65,18 @@ python getPatchImages.py
   - AutoEncoder with nonlinear(PReLU) dimension reduction
   - AutoEncoder based on Deep CNN with tanh function
   - **AutoEncoder based on Deep CNN with Sigmoid function** \
-    ![model4](./model-architecture.png)
+    ![model4](./img/model-architecture.png)
     - encoder: 이미지의 공간정보를 담고있는 CNN을 기반으로 특징 추출
     - decoder: transpose하여 다시 64x64 패치로 복원
 
-- step4 \
-![val](./val.png)
+- step4 
+![val](./img/val.png)
 <br>validation set으로 평가한 결과, model1가 가장 높은 f1 score를 얻었다. 
 
-![model1-test](./model1.png)
+![model1-test](./img/model1.png)
 <br>그러나 model1이 재구성한 이미지를 시각화해본 결과, PCA와 비슷한 원리로 linear reduction을 통해, 섬유의 특징을 섬세하게 추출해내지 못했음을 확인할 수 있다.
 
-![model4-test](./model4.png)
+![model4-test](./img/model4.png)
 <br>따라서 validation에서 좋은 성능을 보였고, validate 데이터의 예측 및 재구성 결과도 좋은 model4를 최종 모델로 선정한다.
 
 - step4 \
