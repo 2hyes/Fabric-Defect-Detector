@@ -76,11 +76,11 @@ python getPatchImages.py
 </p>
 <br>
 validation set으로 평가한 결과, model1가 가장 높은 f1 score를 얻었다. 
-
+<br><br>
 <table>
   <tr>
     <td align="center">Model1</td>
-    <td align="center">**Model4**</td>
+    <td align="center">Model4</td>
    </tr>
   <tr>
     <td><img src="./img/model1.png"></td>
