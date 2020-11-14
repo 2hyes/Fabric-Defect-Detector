@@ -54,7 +54,7 @@ python getData.py
 ```
 
 - step2 \
-: divided into patches. 이미지 한 개당 172개의 패치(64x64)로 쪼개서 tensor형태로 저장.
+: divided into patches. 이미지 한 개당 256개의 패치(64x64)로 쪼개서 tensor형태로 저장.
 ```
 python getPatchImages.py
 ```
