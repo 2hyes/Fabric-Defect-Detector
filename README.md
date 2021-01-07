@@ -1,4 +1,6 @@
 # Fabric-Defect-Detector
+Eng introduction: https://sites.google.com/view/hyeseunglee/fabric-defect-detector 
+
 ## 1. 개요
 - 목표 \
 Detect defection of Fabric Database \
